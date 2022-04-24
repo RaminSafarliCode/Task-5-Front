@@ -189,7 +189,7 @@ main {
 }
 
 .the_band {
-  width: 800px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 64px 16px;
@@ -248,7 +248,7 @@ h2 {
 }
 
 .tour_dates {
-  width: 800px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 64px 16px;
@@ -291,12 +291,16 @@ h2 {
   padding-bottom: 3px;
 }
 
+.number_notf {
+  position: relative;
+}
+
 .number_notf::after {
   content: "3";
   background-color: black;
   border-radius: 50%;
   color: white;
-  position: relative;
+  position: absolute;
   padding: 3px 8px;
   left: 85%;
 }
@@ -357,7 +361,7 @@ h2 {
 }
 
 .contact {
-  width: 800px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   padding: 64px 16px;
@@ -367,6 +371,11 @@ h2 {
   display: flex;
   width: 100%;
   padding: 32px 0px;
+}
+
+.divison_name_email {
+  display: flex;
+  margin: 0px -8px 8px -8px;
 }
 
 .info_part {
@@ -456,4 +465,43 @@ footer {
 
 .footer_span a {
   color: black;
+}
+
+@media (max-width: 600px) {
+  .buy_tickets_sc {
+    flex-direction: column;
+  }
+  .city {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    flex-direction: column;
+  }
+  .photographer_img {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact_input {
+    flex-direction: column;
+  }
+  .info_part {
+    width: 100%;
+  }
+  .input_part {
+    width: 100%;
+  }
+  .divison_name_email {
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .input_name_email {
+    width: 100%;
+  }
 }
