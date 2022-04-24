@@ -24,7 +24,7 @@
     <title>W3.CSS Template</title>
   </head>
   <body>
-    <header id="head_fix">
+    <header class="head_fix">
       <div class="container_hd">
         <div class="nav_header">
           <ul class="all_ul">
@@ -55,6 +55,21 @@
           <div class="search_icon"><i class="fas fa-search"></i></div>
         </div>
       </div>
+    </header>
+
+    <header class="mobile_head">
+      <div class="mobile_head_div">
+        <span><a href="#">Home</a></span>
+        <div class="hamburger_icon"><i class="fa fa-bars"></i></div>
+      </div>
+      <!-- <div class="ham_menu">
+        <ul>
+          <li class="menu_items"><a href="#">Band</a></li>
+          <li class="menu_items"><a href="#">Tour</a></li>
+          <li class="menu_items"><a href="#">Contact</a></li>
+          <li class="menu_items"><a href="#">Merch</a></li>
+        </ul>
+      </div> -->
     </header>
 
     <main>
@@ -137,7 +152,7 @@
                 <button class="buy_ticket">Buy Tickets</button>
               </div>
             </div>
-            <div class="city">
+            <div class="city city_center">
               <img src="./asset/images/paris.jpg" alt="paris" />
               <div class="information">
                 <div class="city_name">Paris</div>
@@ -216,7 +231,9 @@
           </div>
         </div>
       </section>
-      <section class="map_bg"></section>
+      <section class="map_bg">
+        <img style="width: 100%" src="./asset/images/map.jpg" alt="map" />
+      </section>
       <footer>
         <div class="icons">
           <i class="fa fa-facebook-official icon_width"></i>
